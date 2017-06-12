@@ -11,7 +11,7 @@ Ruby语言的官方网站：[https://www.ruby-lang.org/zh_cn/](https://www.ruby-
 ## Ruby特点
 
 > 简单哲学、高生产力、精巧、自然语法、高可读性&可维护性
-> 灵感来自: Lisp(难以读懂)、Perl和Smalltalk
+> 灵感来自: Lisp(难以读懂)、Perl和 Smalltalk
 > 初衷: 让程序员能够更快乐的写代码
 > 动态语言: 更少的代码做更多的事，更敏捷的开发;执行效率比静态语言（Java、C++、etc.）慢，没有编译期可以检查类型错误(单元测试/TTD来解决)
 
@@ -35,4 +35,4 @@ IRB:是一个互动的Ruby环境，可以让我们练习和语法，做些简单
 
 * [Ruby 程式语言入门](https://ihower.tw/rails/ruby-cn.html)
 
-* ![如何快速学习RoR - 知乎](https://www.zhihu.com/question/19552402)
+* [如何快速学习RoR - 知乎](https://www.zhihu.com/question/19552402)
