@@ -6,7 +6,7 @@
 
 ##  笔记目录
 - Ruby基础知识学习
-  - Ruby介绍
+  - [Ruby介绍](https://github.com/Kerzzi/ruby_notes/tree/master/01_ruby_basic_tutorial)
 
 - 项目实战记录
-  - 「从零开始做购物网站」
+  - [「从零开始做购物网站」](https://github.com/Kerzzi/ruby_notes/tree/master/03_make_shopping_websites)
