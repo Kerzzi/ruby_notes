@@ -275,13 +275,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-/* --- 以下是首页banner滚动大图的CSS样式包 --- */
+/* === 以下是首页banner滚动大图的CSS样式包 === */
 
-/*  --- 大图高度 和 滚动按钮 ---  */
+/* --- 大图高度 和 滚动按钮 --- */
 .fade-carousel {                                      //滚动大图的相框高
     position: relative;
     height: 816px;
-    margin-top: -65px;
+    margin-top: -15px;
 }
 .fade-carousel .carousel-inner .item {                //图片截取的宽度，这里与相框高度一致
     height: 816px;
