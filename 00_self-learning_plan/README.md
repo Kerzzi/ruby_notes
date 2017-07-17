@@ -38,7 +38,8 @@
 
 ##  路线三：HTML/CSS/JavaScript
 
-* 3.1 《Head First HTML与CSS(第2版)》(必学)
+* 3.1 [《Head First HTML与CSS(第2版)》](https://book.douban.com/subject/25752357/)(必学)（Done）
+  * 非常入门的一本书,对新手非常友好。 虽然很厚，700多页。但是图表很多，3-4天足以看完，HTML与CSS的入门好书。不过如果不愿意买书，也可以跟着[这个网站：freecodecamp](https://www.freecodecamp.cn/map) 上面的内容去做。这个网站内容免费，但是极为优秀！极为优秀！极为优秀！
 * 3.2 《CSS揭秘》(必学)
   * 3.2.1 极其惊艳的一本书，涵盖了CSS3的很多奇技淫巧，虽说有些地方不太实用，但让人眼前一亮，很值得看。
 * 3.3 《JavaScript DOM编程艺术》(必学)
