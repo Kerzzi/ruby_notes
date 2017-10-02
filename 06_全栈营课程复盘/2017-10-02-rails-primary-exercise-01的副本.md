@@ -62,34 +62,59 @@ rails generate scaffold topic title:string description:text
 
 ### 5. 部署到Heroku上
 
-> 第一步：在终端（Terminal）里输入```heroku create```
+> 第一步：在终端（Terminal）里输入
+```
+heroku create
+```
 > 第二步：打开 Gemfile 文件, **迁移sqlite3**
-> ![](https://ww1.sinaimg.cn/large/006tKfTcgy1fk3q97m3acj30p70pntab.jpg)
+
+![](https://ww1.sinaimg.cn/large/006tKfTcgy1fk3q97m3acj30p70pntab.jpg)
 > 变成下图这样
-> ![](https://ww4.sinaimg.cn/large/006tKfTcgy1fk3q9b2aisj30oi0kl3zl.jpg)
+
+![](https://ww4.sinaimg.cn/large/006tKfTcgy1fk3q9b2aisj30oi0kl3zl.jpg)
 > 加'pg'这个gem
-> ![](https://ww3.sinaimg.cn/large/006tKfTcgy1fk3q9vl80bj30o80dqaak.jpg)
-> 存档，运行```bundle install```
+
+![](https://ww3.sinaimg.cn/large/006tKfTcgy1fk3q9vl80bj30o80dqaak.jpg)
+> 存档，运行
+
+```
+bundle install
+```
 
 > 第三步：保存修改
 
-> ```
-> git add .
-> git commit -m "move sqlite3 to dev group & add pg to production group"
-> ```
+```
+ git add .
+ git commit -m "move sqlite3 to dev group & add pg to production group"
+```
 
-> 第四步：最后再输入 ```git push heroku master```
-> 第五步：部署成功后，在终端（Terminal）输入 ```heroku run rake db:migrate```
-> 第六步：最后在终端输入 ```heroku open``` 就可以打开刚刚部署到heroku上的app了。
+> 第四步：最后再输入 
+
+```
+git push heroku master
+```
+
+> 第五步：部署成功后，在终端（Terminal）输入 
+
+```
+heroku run rake db:migrate
+```
+
+> 第六步：最后在终端输入 heroku open。
+
+就可以打开刚刚部署到heroku上的app了
 
 ### 6. 新建model文件
 
+新建model文件
 ```
 rails generate model vote topic_id:integer
 rake db:migrate
 ```
 
 ### 7. 告诉 Topic model 有 Vote（投票记录）的存在
+
+告诉 Topic model 有 Vote（投票记录）的存在
 
 ```ruby app/models/topic.rb
 class Topic < ApplicationRecord
@@ -143,7 +168,8 @@ Rails.application.routes.draw do
 end
 ```
 
-检查 route 有成功加入，方法是看一下 ```rake routes``` 的输出结果。
+检查 route 有成功加入，方法是看一下 rake routes 的输出结果。
+
 
 * 在 view 里面加一个按钮
 
@@ -162,16 +188,28 @@ end
 ```
 
 代码解释：
-```pluralize(topic.votes.count, "vote")```
+```
+pluralize(topic.votes.count, "vote")
+```
+
 会输出票数，并且根据（英文的）单复数在后面加上 'vote' 或 'votes' 单字，pluralize：以复数形式表示。
 
-```button_to '+1' ```
+```
+button_to '+1' 
+```
+
 加一个 HTML 的按钮（button），里面有字 '+1'。
 
-```upvote_topic_path(topic)```
+```
+upvote_topic_path(topic)
+```
+
 产生我们要呼叫的 action 的对应 URL。以此例而言，我们要对目前的 topic 投票加分。它会回传/topics/42/upvote（如 topic.id 是 42）
 
-```method: :post```
+```
+method: :post
+```
+
 确保我们使用了 CRUD 里面的 create 操作，而非 read（method: :get）。
 
 ### 10. 把标题变成超连结
